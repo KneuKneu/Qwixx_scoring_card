@@ -56,18 +56,17 @@ function generateNumbers(max){
 function clicked() {
     console.log(this)
   // The event object has a property called "target" that refers to the element that triggered the event
+  // 'event' is depricated :( -> ask ChatGPT :)
   var clickedElement = event.target;
 
-  // Now you can do something with the clicked element
-  console.log('Element clicked:', clickedElement)
   // value of the element you clicked
   for (let i = Number(clickedElement.innerText); i > 1 ; i-- ){
     console.log(i)
     const currentElement = document.getElementById(`test ${i}`)
+      // replace the value with an X
+      currentElement.innerHTML = "X"
     
   }
-  // replace the value with an X
-  clickedElement.innerHTML = "X"
 
 }
 
