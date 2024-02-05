@@ -59,14 +59,15 @@ function clicked() {
   // 'event' is depricated :( -> ask ChatGPT :)
   var clickedElement = event.target;
 
-  // value of the element you clicked
-  for (let i = Number(clickedElement.innerText); i > 1 ; i-- ){
-    console.log(i)
-    const currentElement = document.getElementById(`test ${i}`)
-      // replace the value with an X
-      currentElement.innerHTML = "X"
+  // value of the element you clicked (old)
+//   for (let i = Number(clickedElement.innerText); i > 1 ; i-- ){
+//     console.log(i)
+//     const currentElement = document.getElementById(`test ${i}`)
+//       // replace the value with an X
+//       currentElement.innerHTML = "X"
     
-  }
+//   }
+    clickedElement.innerHTML = "X"
 
 }
 
