@@ -1,3 +1,4 @@
+/* Start Generate button */
 .button-generate {
   align-items: center;
   background-color: #0A66C2;
@@ -43,7 +44,9 @@
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
+/* End Generate button */
 
+/* Start general elements */
 input {
     width: 300px;
     height: 30px;
@@ -53,20 +56,85 @@ hr {
     border: 3px solid blue;
     border-radius: 5px;
 }
-td {
-    font-size: 25px;
-    padding: 5px;
-    width: 20px;
-}
+
+/* End general elements */
+
+/* Start rows */
 #green-row {
     background-color: rgb(59,155,88);
 }
 #blue-row {
     background-color: rgb(53,71,141);
 }
-#yellow-row{
+#yellow-row {
     background-color: rgb(252,224,68);
 }
-#red-row{
-    background-color: rgb(211,60,73)    
+#red-row {
+    background-color: rgb(211,60,73);    
+}
+.row-background {
+  border-radius: 5px;
+  border-width: thin 2px;
+}
+#green-row-background {
+  background-color: rgb(213, 235, 219);
+  color: rgb(49,143,77);
+}
+#blue-row-background {
+  background-color: rgb(174, 183, 216);
+  color: rgb(53,71,141);
+}
+#yellow-row-background {
+  background-color: rgb(253,251,243);
+  color: rgb(252,224,69);
+  border-color: rgb(216,153,120);
+}
+#red-row-background {
+  background-color: rgb(252, 193, 198);    
+  color: rgb(212,60,72);
+  border-color: rgb(173,61,71);
+}
+
+.row {
+  padding: 4px;
+  margin: 0 0 2px 0;
+  width: fit-content;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 25px;
+  border-radius: 5px;
+}
+/* End rows */
+#gray-background {
+  background-color: rgb(190, 190, 190);
+  padding: 5px;
+  width: fit-content;
+}
+.score-field {
+    width: 35px;
+    height: 26px;
+/* Border zorgt er ook voor dat je niet meer een 'click' effect ziet */  
+    border: 2px solid;
+    border-radius: 4px;
+    margin: 1px;
+    background-color: white;  
+}
+
+#blue-score-field {
+  border-color: blue;
+}
+#red-score-field {
+  border-color: red;
+}
+#green-score-field {
+  border-color: green;
+}
+#yellow-score-field {
+  border-color: yellow;
+}
+#score-fields {
+  background-color: #BCBCBC;
+  width: fit-content;
+  padding: 2px 8px 10px 10px;      
 }
