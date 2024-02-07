@@ -3,6 +3,12 @@ const numberInput = document.getElementById("NumberInput")
 const scoreCardDiv = document.getElementById("ScoreCardDiv")
 let allNumButtons = ""
 
+const redScoreText = document.getElementById("red-score-field")
+const yellowScoreText = document.getElementById("yellow-score-field")
+const greenScoreText = document.getElementById("green-score-field")
+const blueScoreText = document.getElementById("blue-score-field")
+// const totalScoreText = document.getElementById("total-score")
+
 generateCardBtn.addEventListener("click", function () {
     generateNumbers(numberInput.value)
 })
@@ -33,6 +39,10 @@ function createRowButtons(max, color, type) {
     return listItem
 }
 
+function updateScore(color,){
+
+}
+
 function generateNumbers(max) {
     // if the inputed max number is between 12 and 20 generate the numbers for the card
     localStorage.clear();
@@ -59,13 +69,13 @@ function generateNumbers(max) {
         listItems += `
         <div id="score-fields">
         <span id="score-text">Score</span>
-        <button id="red-score-field" class="score-field"></button>
+        <button id="red-score-field" class="score-field">0</button>
         <span>+</span>
-        <button id="yellow-score-field" class="score-field"></button>
+        <button id="yellow-score-field" class="score-field">0</button>
         <span>+</span>
-        <button id="green-score-field" class="score-field"></button>
+        <button id="green-score-field" class="score-field">0</button>
         <span>+</span>
-        <button id="blue-score-field" class="score-field"></button>
+        <button id="blue-score-field" class="score-field">0</button>
     </div>`
         scoreCardDiv.innerHTML = listItems
         //Update allNumButtons to set the on click event listener
